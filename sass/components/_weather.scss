@@ -4,6 +4,9 @@
 
 // today-section
 .today-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 // left-part
@@ -12,47 +15,92 @@
 
 // today
 .today {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
   // today__img-wrapper
   &__img-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   // today__img
   &__img {
+    display: block;
+    min-width: 192px;
+    min-height: 192px;
   }
 
   // today__text
   &__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   // today__day
   &__day {
+    margin: 0;
+    color: typography.$text-medium-color;
+    font-size: 1.5rem;
   }
 
   // today__degrees
   &__degrees {
+    margin: 0;
+    color: typography.$text-high-color;
+    font-size: 3rem;
   }
 }
 
 // days-section
 .days-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 // days
 .days {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 // day
 .day {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   // day__name
   &__name {
   }
 
   // day__img-wrapper
   &__img-wrapper {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   // day__img
   &__img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
   }
 
   // day__degrees
