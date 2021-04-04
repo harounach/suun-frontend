@@ -80,6 +80,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
+  // large tablet
+  @include mixins.large-tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  // small-desktop
+  @include mixins.small-desktop {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 // day
