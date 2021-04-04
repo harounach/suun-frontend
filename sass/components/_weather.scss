@@ -1,0 +1,61 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+
+// today-section
+.today-section {
+}
+
+// left-part
+.left-part {
+}
+
+// today
+.today {
+  // today__img-wrapper
+  &__img-wrapper {
+  }
+
+  // today__img
+  &__img {
+  }
+
+  // today__text
+  &__text {
+  }
+
+  // today__day
+  &__day {
+  }
+
+  // today__degrees
+  &__degrees {
+  }
+}
+
+// days-section
+.days-section {
+}
+
+// days
+.days {
+}
+
+// day
+.day {
+  // day__name
+  &__name {
+  }
+
+  // day__img-wrapper
+  &__img-wrapper {
+  }
+
+  // day__img
+  &__img {
+  }
+
+  // day__degrees
+  &__degrees {
+  }
+}
