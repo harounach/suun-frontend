@@ -74,6 +74,12 @@
   grid-template-columns: 100%;
   gap: 1rem;
   padding: 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }
 
 // day
@@ -83,8 +89,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // tablet
+  @include mixins.tablet {
+    flex-direction: column;
+    height: auto;
+  }
+
   // day__name
   &__name {
+    width: 20%;
+    margin: 0;
+    color: typography.$text-medium-color;
+
+    // tablet
+    @include mixins.tablet {
+      width: auto;
+    }
   }
 
   // day__img-wrapper
@@ -105,5 +126,15 @@
 
   // day__degrees
   &__degrees {
+    width: 20%;
+    margin: 0;
+    color: typography.$text-high-color;
+    font-size: 1.25rem;
+    text-align: right;
+
+    // tablet
+    @include mixins.tablet {
+      width: auto;
+    }
   }
 }
