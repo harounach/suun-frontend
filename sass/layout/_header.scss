@@ -12,9 +12,30 @@
   align-items: center;
 
   // appbar_section
-  &_section {
+  &__section {
     margin: 0;
     padding: 0;
+
+    &--center {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  // appbar__app-name
+  &__app-name {
+    display: none;
+    margin-left: 1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    // tablet
+    @include mixins.tablet {
+      display: block;
+    }
   }
 }
 
