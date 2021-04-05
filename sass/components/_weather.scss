@@ -9,8 +9,27 @@
   padding: 0;
 }
 
-// left-part
-.left-part {
+// city
+.city {
+  // city__name
+  &__name {
+    text-align: center;
+    font-size: 2rem;
+    color: typography.$text-high-color;
+    margin-bottom: 0.5rem;
+  }
+
+  // city__error
+  &__error {
+    text-align: center;
+    color: variables.$error-color;
+    margin: 0.5rem;
+    display: none;
+
+    &--show-error {
+      display: block;
+    }
+  }
 }
 
 // today
