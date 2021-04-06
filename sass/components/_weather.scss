@@ -48,13 +48,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
   }
 
   // today__img
   &__img {
     display: block;
-    min-width: 192px;
-    min-height: 192px;
+    min-width: 152px;
+    min-height: 152px;
+
+    // tablet
+    @include mixins.tablet {
+      min-width: 192px;
+      min-height: 192px;
+    }
   }
 
   // today__text
